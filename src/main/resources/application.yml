@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: @spring.profiles.active@
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/dev_db
+      username: root
+      password: 11111111
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+---
+
+spring:
+  profiles: prod
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/prod_db
+    username: root
+    password: 11111111
+
